@@ -20,3 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+      - name: Build Android
+        env:
+          EXPO_TOKEN: mNmp-o04381I9E2GN2WSp76iiqLVuw6bZ2etu2RF
+        run: eas build --platform android --non-interactive --profile production
